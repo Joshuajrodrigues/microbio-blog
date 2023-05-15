@@ -1,7 +1,6 @@
 <script>
   import GiMicroscope from "svelte-icons/gi/GiMicroscope.svelte";
   import TiThMenuOutline from "svelte-icons/ti/TiThMenuOutline.svelte";
-  import IoIosCloseCircleOutline from "svelte-icons/io/IoIosCloseCircleOutline.svelte";
   import IoMdClose from 'svelte-icons/io/IoMdClose.svelte'
   let isMenuOpen = false;
 </script>

@@ -3,7 +3,7 @@
 
 </script>
 <section>
-  <h2>Latest</h2>
+  <h2>Latest posts</h2>
   <Card/>
 </section>
 
