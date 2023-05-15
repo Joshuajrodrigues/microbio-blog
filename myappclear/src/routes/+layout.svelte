@@ -1,6 +1,9 @@
 <script>
   import GiMicroscope from "svelte-icons/gi/GiMicroscope.svelte";
   import TiThMenuOutline from "svelte-icons/ti/TiThMenuOutline.svelte";
+  import IoIosCloseCircleOutline from "svelte-icons/io/IoIosCloseCircleOutline.svelte";
+  import IoMdClose from 'svelte-icons/io/IoMdClose.svelte'
+  let isMenuOpen = false;
 </script>
 
 <header>
@@ -8,8 +11,12 @@
     <GiMicroscope />
   </div>
   <h1>Microbee</h1>
-  <div class="menu">
+  <div on:keydown={()=>isMenuOpen = !isMenuOpen} on:click={()=>isMenuOpen = !isMenuOpen} class="menu">
+    {#if isMenuOpen}
+    <IoMdClose/>
+    {:else}
     <TiThMenuOutline />
+    {/if}
   </div>
 </header>
 
@@ -36,12 +43,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
+
     border-bottom: 2px solid rgb(32, 49, 38);
   }
   footer {
     display: flex;
-   
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
