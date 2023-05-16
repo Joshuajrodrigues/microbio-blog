@@ -1,10 +1,14 @@
 <script lang="ts">
+ 
+
     interface Idata{
-        title:String,
-        content:String
+        content:ConstructorOfATypedSvelteComponent
+        title:string
+        date:string
     }
     export let data:Idata;
 </script>
 
 <h1>{data.title}</h1>
-<div>{@html data.content}</div>
+<p>Published: {data.date}</p>
+<svelte:component this={data.content} />
