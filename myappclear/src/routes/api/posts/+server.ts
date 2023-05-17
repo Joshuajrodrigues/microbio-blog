@@ -8,6 +8,8 @@ type IAllPosts = {
   path: string;
 }[];
 
+
+
 export const GET = async () => {
   const allPosts: IAllPosts = await fetchMarkdownPosts();
   const sortedPosts = allPosts.sort((a, b) => {
