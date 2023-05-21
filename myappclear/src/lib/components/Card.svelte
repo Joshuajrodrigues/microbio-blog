@@ -4,7 +4,7 @@
 
 
 
-<a href="#">
+<a href={post.path}>
   <div class="card">
     <img src="./microbeDefault.jpg" alt="microbe" class="img" />
     <div class="title">
