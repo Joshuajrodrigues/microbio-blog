@@ -15,8 +15,7 @@
   a {
     all: unset;
     cursor: pointer;
-    position: absolute;
-    right: 32px;
+ 
    
   }
  
