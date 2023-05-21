@@ -1,6 +1,9 @@
 <footer>
-  <span>All rights reserved 2023-24</span>
-  <span>Contact: test@mail.com</span>
+  <p>&copy; 2023 Microbee. All Rights Reserved.</p>
+  <div>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
 </footer>
 
 <style>
@@ -14,5 +17,12 @@
     bottom: 0;
     right: 0;
     left: 0;
+  }
+  a{
+    all: unset;
+    cursor: pointer;
+   
+    margin: 12px;
+    padding: 6px;
   }
 </style>
