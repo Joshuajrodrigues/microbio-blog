@@ -1,5 +1,6 @@
-<script>
-  export let post
+
+<script lang="ts">
+  export let post:import("$lib/utils").MarkDownType
 </script>
 
 
