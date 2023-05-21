@@ -55,12 +55,3 @@
 <br>
 <b> Chiara Rodrigues </b>
 
-<div class="bottom-back">
-  <BackButton/>
-</div>
-
-<style>
-  .bottom-back{
-    margin-top: 32px;
-  }
-</style>
