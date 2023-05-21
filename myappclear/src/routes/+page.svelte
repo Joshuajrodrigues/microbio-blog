@@ -16,7 +16,5 @@
 </section>
 
 <style>
-  h2 {
-    margin-left: 32px;
-  }
+ 
 </style>

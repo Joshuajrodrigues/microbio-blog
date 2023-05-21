@@ -24,7 +24,7 @@
 <style>
   .card {
     border: 1px solid rgb(32, 49, 38);
-    margin: 32px;
+    margin: 12px;
     min-height: 100px;
     display: grid;
     grid-template:

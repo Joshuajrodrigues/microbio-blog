@@ -13,7 +13,9 @@
 
 <Header />
 <MenuModal/>
-<slot />
+<div class="content">
+  <slot />
+</div>
 <Footer />
 
 <style>
@@ -31,5 +33,9 @@
     box-sizing: border-box;
     height: 100vh;
     color: var(--secondary-color);
+  }
+
+  .content{
+    margin: 32px;
   }
 </style>
