@@ -1,4 +1,8 @@
+<script>
+  import BackButton from "$lib/components/BackButton.svelte";
 
+</script>
+<BackButton/>
 <h1>
     Contact
 </h1>

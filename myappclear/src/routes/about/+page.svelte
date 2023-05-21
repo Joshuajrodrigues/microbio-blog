@@ -1,5 +1,10 @@
+<script>
 
+  import BackButton from "$lib/components/BackButton.svelte";
 
+</script>
+
+<BackButton/>
 <h1>About</h1>
 
 <p>
@@ -49,3 +54,13 @@
 </i>
 <br>
 <b> Chiara Rodrigues </b>
+
+<div class="bottom-back">
+  <BackButton/>
+</div>
+
+<style>
+  .bottom-back{
+    margin-top: 32px;
+  }
+</style>

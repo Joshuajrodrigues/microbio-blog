@@ -1,7 +1,6 @@
 <script>
   import GiMicroscope from "svelte-icons/gi/GiMicroscope.svelte";
   import TiThMenuOutline from "svelte-icons/ti/TiThMenuOutline.svelte";
-  import IoMdClose from "svelte-icons/io/IoMdClose.svelte";
   import {isMenuOpen} from '../stores/menuStore'
 
   const handleMenu=()=>{
@@ -13,22 +12,27 @@
 <header>
   <div class="icon">
     <GiMicroscope />
-  </div>
-  <h1>Microbee</h1>
+  </div>  
+  <a href="/">
+    <h1>Microbee</h1>
+  </a>
   <div
     on:keydown={handleMenu}
     on:click={handleMenu}
     class="menu"
   >
-    {#if $isMenuOpen}
-      <IoMdClose />
-    {:else}
+    {#if !$isMenuOpen}
+    
       <TiThMenuOutline />
     {/if}
   </div>
 </header>
 
 <style>
+  a{
+    all: unset;
+    cursor: pointer;
+  }
   header {
     display: flex;
     align-items: center;

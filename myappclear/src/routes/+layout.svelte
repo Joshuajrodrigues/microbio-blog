@@ -2,13 +2,7 @@
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
   import MenuModal from "$lib/components/MenuModal.svelte";
-  let isMenuOpen = false
 
-
-  const handleMenu=()=>{
-
-  }
-  
 </script>
 
 <Header />
