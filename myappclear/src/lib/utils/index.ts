@@ -1,15 +1,17 @@
-type metadatatype = {
+export type MarkDownType = {
     metadata:{
         title:string
+        blurb:string
         date:Date
-    }
+    },
+    path: string;
 }
-type BlogEntry = [string, () => Promise<metadatatype>];
+type BlogEntry = [string, () => Promise<MarkDownType>];
 type BlogEntriesArray = BlogEntry[];
 
 export const fetchMarkdownPosts = async () => {
 
-    const allPostFiles = import.meta.glob<metadatatype>('/src/routes/blog/*.md')
+    const allPostFiles = import.meta.glob<MarkDownType>('/src/routes/blog/*.md')
 
     
     const iterablePostFiles:BlogEntriesArray = Object.entries(allPostFiles)
@@ -18,10 +20,8 @@ export const fetchMarkdownPosts = async () => {
       iterablePostFiles.map(async ([path, resolver]) => {
         const { metadata } = await resolver()
         const postPath = path.slice(11, -3)
-    
-    
           return {
-            meta: metadata,
+            metadata,
             path: postPath,
           }
         })
