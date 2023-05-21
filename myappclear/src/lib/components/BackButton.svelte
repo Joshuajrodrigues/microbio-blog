@@ -22,7 +22,7 @@
   .icon {
     display: flex;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     width: 64px;
     height: 32px;
   }
