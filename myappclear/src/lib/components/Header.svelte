@@ -14,7 +14,7 @@
     <GiMicroscope />
   </div>  
   <a href="/">
-    <h1>Microbee</h1>
+    <h1>The Culture Dish</h1>
   </a>
   <div
     on:keydown={handleMenu}
