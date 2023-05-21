@@ -1,13 +1,18 @@
+<script>
+  export let post
+</script>
+
+
+
 <a href="#">
   <div class="card">
     <img src="./microbeDefault.jpg" alt="microbe" class="img" />
     <div class="title">
-      <span> The study on Psudeonomas Aguearus </span>
+      <span> {post.metadata.title} </span>
       <hr />
     </div>
     <div class="blurb">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
-      magnam.
+      {post.metadata.blurb}
       <div class="read-more">
         Read more
       </div>
