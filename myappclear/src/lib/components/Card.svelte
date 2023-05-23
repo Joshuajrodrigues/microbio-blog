@@ -1,22 +1,16 @@
-
 <script lang="ts">
-  export let post:import("$lib/utils").MarkDownType
+  export let post: import("$lib/utils").MarkDownType;
 </script>
-
-
 
 <a href={post.path}>
   <div class="card">
     <img src="./microbeDefault.jpg" alt="microbe" class="img" />
     <div class="title">
       <span> {post.metadata.title} </span>
-      <hr />
     </div>
     <div class="blurb">
       {post.metadata.blurb}
-      <div class="read-more">
-        Read more
-      </div>
+      <div class="read-more">Read more</div>
     </div>
   </div>
 </a>
@@ -40,10 +34,9 @@
   .card:active {
     transform: scale(1.05);
   }
-  .read-more{
+  .read-more {
     margin-top: 10px;
     border-top: 1px dotted rgb(32, 49, 38);
-
   }
   hr {
     margin: 0;
@@ -59,10 +52,13 @@
     text-align: center;
     font-size: larger;
     font-weight: bold;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 5px;
   }
   .blurb {
     grid-area: blurb;
-
+    border-left: 1px solid black;
     text-align: center;
     padding: 8px;
   }
@@ -71,20 +67,19 @@
     cursor: pointer;
   }
 
-  
-@media only screen and (min-width: 768px) {
-  /* For ipad: */
-  .card{
-    font-size: 15px;
-    margin: 34px;
-    height: 200px;
+  @media only screen and (min-width: 768px) {
+    /* For ipad: */
+    .card {
+      font-size: 15px;
+      margin: 34px;
+      height: 200px;
+    }
+    .title {
+      font-size: larger;
+    }
+    .read-more {
+      margin-top: 30px;
+      border-top: 2px dotted rgb(32, 49, 38);
+    }
   }
-  .title {
-   font-size: larger;
-  }
-  .read-more{
-    margin-top: 30px;
-    border-top: 2px dotted rgb(32, 49, 38);
-  }
-}
 </style>

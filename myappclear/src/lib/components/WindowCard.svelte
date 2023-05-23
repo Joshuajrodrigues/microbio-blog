@@ -7,10 +7,11 @@
   
   <a href={post.path}>
     <div class="card">
+      
       <img src="./microbeDefault.jpg" alt="microbe" class="img" />
       <div class="title">
         <span> {post.metadata.title} </span>
-        <hr />
+      
       </div>
       <div class="blurb">
         {post.metadata.blurb}
@@ -25,7 +26,7 @@
     .card {
       border: 1px solid rgb(32, 49, 38);
       margin: 12px;
-      min-height: 100px;
+      height: 260px;
       display: grid;
       grid-template:
         "img img" 2fr
@@ -45,9 +46,7 @@
       border-top: 1px dotted rgb(32, 49, 38);
   
     }
-    hr {
-      margin: 0;
-    }
+
     .img {
       grid-area: img;
       width: 100%;
@@ -59,6 +58,9 @@
       text-align: center;
       font-weight: bold;
       font-size: larger;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      padding: 5px;
     }
     .blurb {
       grid-area: blurb;
@@ -70,6 +72,12 @@
       cursor: pointer;
     }
   
+  @media only screen and (min-width: 438px){
+    .read-more{
+      margin-top: 20px;
+     
+    }
+  }
     
   @media only screen and (min-width: 768px) {
     /* For ipad: */
