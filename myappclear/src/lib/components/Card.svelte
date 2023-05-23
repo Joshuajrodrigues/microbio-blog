@@ -4,7 +4,7 @@
 
 <a href={post.path}>
   <div class="card">
-    <img src="./microbeDefault.jpg" alt="microbe" class="img" />
+    <img src={post.metadata?.image_1 || "./microbeDefault.jpg"} alt="microbe" class="img" />
     <div class="title">
       <span> {post.metadata.title} </span>
     </div>

@@ -5,6 +5,7 @@
     content: ConstructorOfATypedSvelteComponent;
     title: string;
     date: string;
+    image_1?:string
   }
   export let data: Idata;
 </script>
@@ -13,7 +14,7 @@
 <h1>{data.title}</h1>
 <p>Published: {data.date}</p>
 
-<img src="/microbeDefault.jpg" alt="hero">
+<img src={data?.image_1 || "/microbeDefault.jpg"} alt="microbe" class="img" />
 <svelte:component this={data.content} />
 
 <style>

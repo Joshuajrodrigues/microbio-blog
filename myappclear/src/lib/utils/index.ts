@@ -3,6 +3,7 @@ export type MarkDownType = {
         title:string
         blurb:string
         date:Date
+        image_1?:string
     },
     path: string;
 }
