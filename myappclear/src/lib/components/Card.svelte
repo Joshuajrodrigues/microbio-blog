@@ -38,9 +38,7 @@
     margin-top: 10px;
     border-top: 1px dotted rgb(32, 49, 38);
   }
-  hr {
-    margin: 0;
-  }
+
   .img {
     grid-area: img;
     width: 100%;
