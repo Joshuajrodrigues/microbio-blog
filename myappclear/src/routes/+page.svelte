@@ -16,5 +16,12 @@
 </section>
 
 <style>
- 
+ @media only screen and (min-width: 768px) {
+  /* For ipad: */
+  h2{
+    font-size: 28px;
+    margin: 34px;
+  }
+
+}
 </style>

@@ -32,6 +32,7 @@
       "img blurb" 2fr;
     grid-template-columns: 1fr 2fr;
     transition: transform 0.3s ease;
+    font-size: 12px;
   }
   .card:hover {
     transform: scale(1.05);
@@ -56,12 +57,12 @@
   .title {
     grid-area: title;
     text-align: center;
-    font-size: 12px;
+
     font-weight: bold;
   }
   .blurb {
     grid-area: blurb;
-    font-size: 12px;
+
     text-align: center;
     padding: 8px;
   }
@@ -69,4 +70,20 @@
     all: unset;
     cursor: pointer;
   }
+
+  
+@media only screen and (min-width: 768px) {
+  /* For ipad: */
+  .card{
+    font-size: 15px;
+    margin: 34px;
+  }
+  .title {
+   font-size: larger;
+  }
+  .read-more{
+    margin-top: 30px;
+    border-top: 2px dotted rgb(32, 49, 38);
+  }
+}
 </style>
