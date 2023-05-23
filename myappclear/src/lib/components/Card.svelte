@@ -4,7 +4,11 @@
 
 <a href={post.path}>
   <div class="card">
-    <img src={post.metadata?.image_1 || "./microbeDefault.jpg"} alt="microbe" class="img" />
+    <img
+      src={post.metadata?.image_1 || "./microbeDefault.jpg"}
+      alt="microbe"
+      class="img"
+    />
     <div class="title">
       <span> {post.metadata.title} </span>
     </div>
@@ -53,6 +57,9 @@
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     padding: 5px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
   }
   .blurb {
     grid-area: blurb;
