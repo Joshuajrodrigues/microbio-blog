@@ -57,7 +57,7 @@
   .title {
     grid-area: title;
     text-align: center;
-
+    font-size: larger;
     font-weight: bold;
   }
   .blurb {
@@ -77,6 +77,7 @@
   .card{
     font-size: 15px;
     margin: 34px;
+    height: 200px;
   }
   .title {
    font-size: larger;

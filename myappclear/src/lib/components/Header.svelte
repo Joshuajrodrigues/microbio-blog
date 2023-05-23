@@ -51,4 +51,11 @@
     height: 32px;
     cursor: pointer;
   }
+
+  @media only screen and (min-width: 768px) {
+  /* For ipad: */
+ h1{
+  font-size: 40px;
+ }
+}
 </style>

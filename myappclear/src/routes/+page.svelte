@@ -1,11 +1,12 @@
 <script>
+  import WindowCard from "$lib/components/WindowCard.svelte";
   import Card from "../lib/components/Card.svelte";
   export let data;
 </script>
 
 <section>
-  <h2>Latest posts</h2>
-   <Card post={data.posts[0]} />
+  <h2>Featured post</h2>
+   <WindowCard post={data.posts[0]} />
 </section>
 
 <section>
