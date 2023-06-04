@@ -39,11 +39,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: auto;
+   
   }
   .modal__menu {
     background-color: var(--main-bg-color);
     max-width: 600px;
-    border: 1px solid var(--secondary-color);
+    border: 5px solid rgb(32, 49, 38);
     width: 50%;
     height: 40%;
     padding: 20px;
