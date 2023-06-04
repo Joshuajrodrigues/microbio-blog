@@ -11,7 +11,6 @@
       <img src={post.metadata?.image_1 || "./microbeDefault.jpg"} alt="microbe" class="img" />
       <div class="title">
         <span> {post.metadata.title} </span>
-      
       </div>
       <div class="blurb">
         {post.metadata.blurb}
@@ -25,8 +24,8 @@
   <style>
     .card {
       border: 1px solid rgb(32, 49, 38);
-      margin: 12px;
-      height: 260px;
+   
+      height: 700px;
       display: grid;
       grid-template:
         "img img" 2fr
@@ -43,8 +42,12 @@
     }
     .read-more{
       margin-top: 10px;
-      border-top: 1px dotted rgb(32, 49, 38);
-  
+      letter-spacing: 3px;
+      text-align:center;
+      background-color: orangered;
+      padding: 12px;
+      color: #fff;
+      font-weight: bold;
     }
 
     .img {
@@ -55,16 +58,15 @@
     }
     .title {
       grid-area: title;
-      text-align: center;
+      text-align: left;
       font-weight: bold;
-      font-size: larger;
-      border-bottom: 1px solid black;
-      border-top: 1px solid black;
+      font-size: 32px;
       padding: 5px;
     }
     .blurb {
       grid-area: blurb;
-      text-align: center;
+      font-size:16px;
+      text-align: left;
       padding: 8px;
     }
     a {

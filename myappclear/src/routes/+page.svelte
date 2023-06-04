@@ -5,7 +5,6 @@
 </script>
 
 <section>
-  <h2>Featured post</h2>
    <WindowCard post={data.posts.at(-1)} />
 </section>
 
