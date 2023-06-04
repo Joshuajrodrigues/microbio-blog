@@ -26,13 +26,6 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
-    .main__featured {
-      margin-bottom: 500px;
-    }
-
-  
-  }
 
   @media screen and (min--moz-device-pixel-ratio:0) {
     .main__featured {

@@ -84,16 +84,20 @@
       display: grid;
       gap: 20px;
       grid-template:
-        "img img" 6fr
-        "title blurb" 1fr
+        "img img" 1fr
+        "img img" 1fr
         "title blurb" 1fr;
       font-size: 12px;
-      height: 500px;
+      height: 80vh;
+    }
+    .img {
+      grid-area: img;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .title:hover {
       text-decoration: underline;
     }
   }
-
- 
 </style>
