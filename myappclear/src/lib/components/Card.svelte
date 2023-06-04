@@ -57,9 +57,10 @@
   .blurb {
     grid-area: blurb;
     text-align: left;
-
+    white-space:nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
   }
   a {
     all: unset;
