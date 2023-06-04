@@ -30,21 +30,19 @@
     grid-template-columns: 1fr 2fr;
     transition: transform 0.3s ease;
     font-size: 12px;
-  
   }
-  .card:hover .title{
+  .card:hover .title {
     text-decoration: underline;
   }
   .card:active {
     transform: scale(1.05);
   }
 
-
   .img {
     grid-area: img;
     width: 100%;
-    height:130px;
-    object-fit:cover;
+    height: 130px;
+    object-fit: cover;
   }
   .title {
     grid-area: title;
@@ -52,7 +50,6 @@
     font-size: 18px;
     font-weight: bold;
 
-   
     /* white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; */
@@ -60,7 +57,7 @@
   .blurb {
     grid-area: blurb;
     text-align: left;
-  
+
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -69,5 +66,15 @@
     cursor: pointer;
   }
 
-
+  @media only screen and (min-width: 1024px) {
+    .card {
+      font-size: 12px;
+    }
+    .title:hover {
+      text-decoration: underline;
+    }
+    .blurb {
+      font-size: 16px;
+    }
+  }
 </style>

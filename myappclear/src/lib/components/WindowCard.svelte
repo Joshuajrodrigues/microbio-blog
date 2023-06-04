@@ -84,30 +84,16 @@
       display: grid;
       gap: 20px;
       grid-template:
-        "img img" 1fr
+        "img img" 6fr
         "title blurb" 1fr
         "title blurb" 1fr;
-      transition: transform 0.3s ease;
       font-size: 12px;
+      height: 500px;
     }
     .title:hover {
       text-decoration: underline;
     }
   }
 
-  @media only screen and (min-width: 2560px) {
-    .img {
-      grid-area: img;
-      width: 100%;
-      height: 40%;
-      object-fit: cover;
-    }
-    .title {
-      font-size: 90px;
-    }
-
-    .blurb {
-      font-size: 40px;
-    }
-  }
+ 
 </style>
