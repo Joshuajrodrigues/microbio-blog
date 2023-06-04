@@ -1,20 +1,25 @@
 <script>
-  import WindowCard from "$lib/components/WindowCard.svelte";
+
+import WindowCard from "$lib/components/WindowCard.svelte";
   import Card from "../lib/components/Card.svelte";
   export let data;
 </script>
 
-<section>
-   <WindowCard post={data.posts.at(-1)} />
-</section>
+<main class="main">
 
-<section>
-  <h2>All posts</h2>
-  {#each data.posts as post}
+  <section class="main__featured">
+    <WindowCard post={data.posts.at(-1)} />
+  </section>
+ 
+  
+  <section class="main__all">
+    <h2>All posts</h2>
+    {#each data.posts as post}
     <Card post={post} />
-  {/each}
-</section>
-
+    {/each}
+  </section>
+  
+</main>
 <style>
  @media only screen and (min-width: 768px) {
   /* For ipad: */
@@ -24,4 +29,6 @@
   }
 
 }
+
+
 </style>

@@ -14,17 +14,16 @@
     </div>
     <div class="blurb">
       {post.metadata.blurb}
-     
     </div>
   </div>
 </a>
 
 <style>
   .card {
-
     margin-bottom: 12px;
     height: 130px;
     display: grid;
+    gap: 12px;
     grid-template:
       "img title" 1fr
       "img blurb" 2fr;
@@ -33,8 +32,8 @@
     font-size: 12px;
   
   }
-  .card:hover {
-    transform: scale(1.05);
+  .card:hover .title{
+    text-decoration: underline;
   }
   .card:active {
     transform: scale(1.05);
@@ -53,7 +52,7 @@
     font-size: 18px;
     font-weight: bold;
 
-    padding: 5px;
+   
     /* white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; */
@@ -61,7 +60,7 @@
   .blurb {
     grid-area: blurb;
     text-align: left;
-    padding-left: 8px;
+  
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -70,16 +69,5 @@
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 768px) {
-    /* For ipad: */
-    .card {
-      font-size: 15px;
-      margin: 34px;
-      height: 200px;
-    }
-    .title {
-      font-size: larger;
-    }
- 
-  }
+
 </style>

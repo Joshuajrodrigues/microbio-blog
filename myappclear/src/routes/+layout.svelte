@@ -32,6 +32,10 @@
   .content{
     margin: 24px;
   }
-
+  @media only screen and (min-width: 1220px) {
+    .content{
+    margin: 50px 200px;
+  }
+  }
   
 </style>
