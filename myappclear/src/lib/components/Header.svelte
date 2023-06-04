@@ -1,6 +1,9 @@
 <script>
   import GiMicroscope from "svelte-icons/gi/GiMicroscope.svelte";
   import TiThMenuOutline from "svelte-icons/ti/TiThMenuOutline.svelte";
+  import TiHomeOutline from "svelte-icons/ti/TiHomeOutline.svelte";
+  import TiInfoLargeOutline from "svelte-icons/ti/TiInfoLargeOutline.svelte";
+  import TiPhoneOutline from "svelte-icons/ti/TiPhoneOutline.svelte";
   import { isMenuOpen } from "../stores/menuStore";
 
   const handleMenu = () => {
@@ -24,13 +27,28 @@
   </div>
   <div class="wide-menu">
     <a href="/">
-      <h2 class="modal__links">Home</h2>
+      <h2 class="modal__links">
+        <div class="icon">
+          <TiHomeOutline />
+        </div>
+        Home
+      </h2>
     </a>
     <a href="/about">
-      <h2 class="modal__links">About</h2>
+      <h2 class="modal__links">
+        <div class="icon">
+          <TiInfoLargeOutline />
+        </div>
+        About
+      </h2>
     </a>
     <a href="/contact">
-      <h2 class="modal__links">Contact</h2>
+      <h2 class="modal__links">
+        <div class="icon">
+          <TiPhoneOutline />
+        </div>
+        Contact
+      </h2>
     </a>
   </div>
 </header>
@@ -80,6 +98,19 @@
       align-items: center;
       justify-content: space-between;
     }
+    .modal__links {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    .modal__links .icon{
+      margin: 5px;
+      width: 24px;
+    }
+    a:hover > .modal__links  {
+      text-decoration: underline;
+    }
+    
     .menu {
       display: none;
     }
