@@ -66,6 +66,16 @@
     all: unset;
     cursor: pointer;
   }
+  @media only screen and (min-width: 768px) {
+    .blurb {
+    grid-area: blurb;
+    text-align: left;
+    white-space:pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+  }
 
   @media only screen and (min-width: 1024px) {
     .card {
