@@ -10,8 +10,8 @@
   />
   <div class="title">
     <a href={post.path}>
-    <span> {post.metadata.title} </span>
-  </a>
+      <span> {post.metadata.title} </span>
+    </a>
   </div>
   <div class="blurb">
     {post.metadata.blurb}
@@ -79,19 +79,35 @@
     }
   }
 
-  @media only screen and (min-width: 1220px) {
+  @media only screen and (min-width: 1024px) {
     .card {
       display: grid;
       gap: 20px;
       grid-template:
-        "img img" 2fr
-        "title blurb" 0.2fr
+        "img img" 1fr
+        "title blurb" 1fr
         "title blurb" 1fr;
       transition: transform 0.3s ease;
       font-size: 12px;
     }
-    .title:hover{
+    .title:hover {
       text-decoration: underline;
+    }
+  }
+
+  @media only screen and (min-width: 2560px) {
+    .img {
+      grid-area: img;
+      width: 100%;
+      height: 40%;
+      object-fit: cover;
+    }
+    .title {
+      font-size: 90px;
+    }
+
+    .blurb {
+      font-size: 40px;
     }
   }
 </style>

@@ -21,6 +21,9 @@ import WindowCard from "$lib/components/WindowCard.svelte";
   
 </main>
 <style>
+  .main__featured{
+    margin-bottom: 20%;
+  }
  @media only screen and (min-width: 768px) {
   /* For ipad: */
   h2{
@@ -29,6 +32,11 @@ import WindowCard from "$lib/components/WindowCard.svelte";
   }
 
 }
+@media only screen and (min-width: 2560px) {
+  .main__featured{
+    margin-bottom: 50%;
+  }
 
+}
 
 </style>
