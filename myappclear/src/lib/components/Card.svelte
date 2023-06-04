@@ -14,16 +14,16 @@
     </div>
     <div class="blurb">
       {post.metadata.blurb}
-      <div class="read-more">Read more</div>
+     
     </div>
   </div>
 </a>
 
 <style>
   .card {
-    border: 1px solid rgb(32, 49, 38);
-    margin: 12px;
-    min-height: 100px;
+
+    margin-bottom: 12px;
+    height: 150px;
     display: grid;
     grid-template:
       "img title" 1fr
@@ -31,6 +31,7 @@
     grid-template-columns: 1fr 2fr;
     transition: transform 0.3s ease;
     font-size: 12px;
+  
   }
   .card:hover {
     transform: scale(1.05);
@@ -38,24 +39,20 @@
   .card:active {
     transform: scale(1.05);
   }
-  .read-more {
-    margin-top: 10px;
-    border-top: 1px dotted rgb(32, 49, 38);
-  }
+
 
   .img {
     grid-area: img;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height:150px;
+    object-fit:fill;
   }
   .title {
     grid-area: title;
-    text-align: center;
-    font-size: larger;
+    text-align: left;
+    font-size: 18px;
     font-weight: bold;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+
     padding: 5px;
     /* white-space: nowrap;
     overflow: hidden;
@@ -63,9 +60,10 @@
   }
   .blurb {
     grid-area: blurb;
-    border-left: 1px solid black;
-    text-align: center;
-    padding: 8px;
+    text-align: left;
+    padding-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   a {
     all: unset;
@@ -82,9 +80,6 @@
     .title {
       font-size: larger;
     }
-    .read-more {
-      margin-top: 30px;
-      border-top: 2px dotted rgb(32, 49, 38);
-    }
+ 
   }
 </style>

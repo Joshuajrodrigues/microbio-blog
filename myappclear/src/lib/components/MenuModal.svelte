@@ -44,7 +44,7 @@
     background-color: var(--main-bg-color);
     max-width: 600px;
     border: 1px solid var(--secondary-color);
-    width: 80%;
+    width: 50%;
     height: 40%;
     padding: 20px;
     margin: 40% auto;
@@ -56,12 +56,13 @@
     all: unset;
     margin: 0;
     cursor: pointer;
+
   }
   a:focus {
-    border: 2px dotted var(--secondary-color);
+    border-bottom: 1px dotted var(--secondary-color);
   }
   a:hover {
-    border: 2px dotted var(--secondary-color);
+    border-bottom: 1px dotted var(--secondary-color);
   }
   .modal__links {
     padding: 2px;

@@ -5,25 +5,25 @@
   
   
   
-  <a href={post.path}>
-    <div class="card">
-      
-      <img src={post.metadata?.image_1 || "./microbeDefault.jpg"} alt="microbe" class="img" />
-      <div class="title">
-        <span> {post.metadata.title} </span>
-      </div>
-      <div class="blurb">
-        {post.metadata.blurb}
-        <div class="read-more">
+  <div class="card">
+    
+    <img src={post.metadata?.image_1 || "./microbeDefault.jpg"} alt="microbe" class="img" />
+    <div class="title">
+      <span> {post.metadata.title} </span>
+    </div>
+    <div class="blurb">
+      {post.metadata.blurb}
+      <div class="read-more">
+          <a href={post.path}>
           Read more
+        </a>
         </div>
       </div>
     </div>
-  </a>
   
   <style>
     .card {
-      border: 1px solid rgb(32, 49, 38);
+
    
       height: 700px;
       display: grid;
@@ -34,15 +34,16 @@
       transition: transform 0.3s ease;
       font-size: 12px;
     }
-    .card:hover {
+    .read-more:hover {
       transform: scale(1.05);
     }
-    .card:active {
+    .read-more:active {
       transform: scale(1.05);
     }
     .read-more{
       margin-top: 10px;
       letter-spacing: 3px;
+      width: 40%;
       text-align:center;
       background-color: orangered;
       padding: 12px;

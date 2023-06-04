@@ -30,7 +30,7 @@
   }
 
   .content{
-    margin: 32px;
+    margin: 24px;
   }
 
   
