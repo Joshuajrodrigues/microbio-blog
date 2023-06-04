@@ -23,7 +23,7 @@
   .card {
 
     margin-bottom: 12px;
-    height: 150px;
+    height: 130px;
     display: grid;
     grid-template:
       "img title" 1fr
@@ -44,8 +44,8 @@
   .img {
     grid-area: img;
     width: 100%;
-    height:150px;
-    object-fit:fill;
+    height:130px;
+    object-fit:cover;
   }
   .title {
     grid-area: title;
